@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteio de futebol Online</title>
+</head>
+<body>
+    <main>
+        <div class="flex title" >
+            <h1>Sorteio de Futebol Online</h1>
+        </div>
+        <div class="flex justify-center father">
+            <div class="flex inputs">
+                <div class="qtdtimes">
+                    <label for="qtdTimes">Quantidade de times: </label>
+                    <select name="qtdTimes" id="qtdTimes">
+                        <option value="" disabled selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="qtdpessoa">
+                    <label for="qtdpessoa">Pessoas por time: </label>
+                    <input type="number" name="qtdpessoa" id="qtdpessoa" min="1" placeholder="Ex: 6">
+                </div>
+                <div class="qtdplayer">
+                    <label for="qtdplayer">Quantidade de jogadores: </label>
+                    <input type="number" name="qtdplayer" id="qtdplayer" min="1" placeholder="Ex: 18">
+                </div>
+                <div id="btnList" class="btnList flex">
+                    <button id="generate" onclick="teste()">Gerar lista</button>
+                    <button id="clear">Limpar valores</button>
+                </div>
+                <div id="list" class="list column flex">
+                    <!-- <h4 class="flex justify-center">Cadastre os jogadores</h4> -->
+                    <!-- <div id="player0" class="player"><input type="text" class="namePlayer flex" name="player0" id="player0" placeholder="Jogador0"></div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
