@@ -99,7 +99,7 @@ main {
             transform: scale(1);
         }
     }
-    .namePlayer {
+    .namePlayer, .sortPlayer {
         background-color: transparent;
         border: none;
         font-size: 80%;
@@ -121,5 +121,27 @@ main {
     .list h4 {
         font-size: 70%;
         margin-bottom: 5px;
+    }
+    /* configurando a lista de aleatorios */
+    .sorteados {
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sorteados {
+        padding: 5px;
+        flex-direction: column;
+    }
+    .team {
+        flex-direction: column;
+        justify-content:center;
+        background-color: aqua;
+        width: 65vw;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .sortPlayer {
+        flex-direction: column;
     }
 }
