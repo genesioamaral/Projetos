@@ -25,7 +25,7 @@ function teste() {
             //criando uma nova div para um novo jogador
             let newdiv = document.createElement('div');
             newdiv.setAttribute('class','player');
-            newdiv.setAttribute('id',`player${i}`);
+            newdiv.setAttribute('id',`player${i+1}`);
             list.appendChild(newdiv);
 
             //criando o input dentro da div que foi criada
@@ -33,8 +33,8 @@ function teste() {
             let newinput = document.createElement('input');
             newinput.setAttribute('type','text');
             newinput.setAttribute('class','namePlayer flex');
-            newinput.setAttribute('id', `player${i}`);
-            newinput.setAttribute('placeholder',`Jogador${i}`);
+            newinput.setAttribute('id', `player${i+1}`);
+            newinput.setAttribute('placeholder',`Jogador${i+1}`);
             newdiv.appendChild(newinput);
         }
         list.innerHTML += '<button id="sortear" onclick="sortear()">Sortear</button>'
