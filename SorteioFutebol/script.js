@@ -24,7 +24,7 @@ function teste() {
 
             //criando uma nova div para um novo jogador
             let newdiv = document.createElement('div');
-            newdiv.setAttribute('class','player');
+            newdiv.setAttribute('class','player flex');
             newdiv.setAttribute('id',`player${i+1}`);
             list.appendChild(newdiv);
 
@@ -87,6 +87,7 @@ function sortear() {
                     divs.setAttribute('id', `sortP${c}sec${i}`)
                     divs.innerHTML = newArray[positionName];
                     section.appendChild(divs);
+                    //retirar o valor do array
                     newArray.splice(newArray.indexOf(`${newArray[positionName]}`),1)
                     console.log(newArray);
                 }
