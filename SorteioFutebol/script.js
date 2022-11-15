@@ -2,15 +2,43 @@ const qtdTeam = document.getElementById('qtdTimes');
 const qtdPeoples = document.getElementById('qtdpessoa');
 const qtdPlayers = document.getElementById('qtdplayer');
 const list = document.querySelector('.list');
+const spanMult = document.querySelector('#multiply');
+
+// verificar se há algum valor de times e pessoas por time
+//para mostrar quantos jogadores poder ser listados
+
+const multiply = {
+    t : setInterval(() => {
+        if(qtdTeam.value != '' && qtdPeoples.value != '') {
+            //variavel que vai receber o valor
+            let mult = Number(qtdTeam.value*qtdPeoples.value);
+            document.querySelector('#multiply').innerHTML = `Serão ${mult} jogadores, divididos entre ${qtdTeam.value} times`;
+        }
+        console.log('verificando');
+        console.log(spanMult.textContent);
+    }, 1000)
+};
+
 
 
 function teste() {
     let team = qtdTeam.value; //times
     let peoples = qtdPeoples.value; //pessoas por time
-    let players = qtdPlayers.value; //quantidade jogadores
+    let players = team*peoples //quantidade jogadores
     console.log(team, peoples, players);
-
-    if(team == '' || peoples == '' || players == ''){
+    spanMult.style.display = 'flex';
+    
+    // codigo para parar a verificação
+    if (players != '') {
+        clearInterval(multiply.t);
+        console.log('parou a verificação');
+    }
+    //a partir da segunda gerada de lista sem atualização
+    //será feito o comentario de jogadores manualmente
+    if(spanMult.textContent == '') {
+        spanMult.innerHTML = `Serão ${team*peoples} jogadores, divididos entre ${team} times`;
+    }
+    if(team == '' || peoples == ''){
         alert('Preencha todos os campos') //se tiver tudo preenchido, ta ok
     }else{
 
@@ -40,6 +68,16 @@ function teste() {
         list.innerHTML += '<button id="sortear" onclick="sortear()">Sortear</button>'
     }
 }
+//limpar inputs
+function limpar() {
+    console.log('limpou');
+    qtdTeam.value = ''
+    qtdPeoples.value = ''
+    spanMult.innerHTML = '';
+    document.querySelector('.list').style.display = 'none';
+}
+
+
 //criar um array com os nomes passados e 
 //depois sortea-los aleatoriamente
 

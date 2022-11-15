@@ -41,11 +41,12 @@
                 </div>
                 <div class="qtdplayer">
                     <label for="qtdplayer">Jogadores partipantes: </label>
-                    <input type="number" name="qtdplayer" id="qtdplayer" min="1" placeholder="Ex: 18">
+                    <span id="multiply" class=" flex justify-center align-center"></span>
+                    <!-- <input type="number" name="qtdplayer" id="qtdplayer" min="1" placeholder="Ex: 18"> -->
                 </div>
                 <div id="btnList" class="btnList flex">
                     <button id="generate" onclick="teste()">Gerar lista</button>
-                    <button id="clear">Limpar valores</button>
+                    <button id="clear" onclick="limpar()">Limpar valores</button>
                 </div>
                 <div class="pc">
                     <div id="list" class="list column flex">
