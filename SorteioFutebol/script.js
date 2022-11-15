@@ -88,7 +88,7 @@ function sortear() {
     //saber o layout do sorteio
     let team = qtdTeam.value; //times
     let peoples = qtdPeoples.value; //pessoas por time
-    let players = qtdPlayers.value; //quantidade jogadores
+    // let players = qtdPlayers.value; //quantidade jogadores
 
     //vai fazer a interação de cada div criada
     //e vai passar o conteúdo para uma posiçao do array
