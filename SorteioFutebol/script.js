@@ -124,6 +124,10 @@ function sortear() {
                     divs.className = 'sortPlayer flex';
                     divs.setAttribute('id', `sortP${c}sec${i}`)
                     divs.innerHTML = newArray[positionName];
+                    //se caso o usuario nao informar um nome e a posição ficar vazia
+                    if(newArray[positionName] == ''){
+                        divs.innerHTML = '(Posição vazia)';
+                    }
                     section.appendChild(divs);
                     //retirar o valor do array
                     newArray.splice(newArray.indexOf(`${newArray[positionName]}`),1)
