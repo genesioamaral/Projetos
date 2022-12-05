@@ -17,14 +17,14 @@ const verifyDesc = () => {
     let linkProject = document.getElementById('linkProject');
     if(idActive == 0) {
         spanDesc.innerHTML = 'Uma calculadora que faz todas as contas báscias necessárias para o nosso dia a dia, com um desing mais "dark", para menor desgaste visual do usuário'
-    }
+    }   linkProject.href = 'https://champs-8.github.io/Projetos/Calculadora/index.html'
     if(idActive == 1) {
         spanDesc.innerHTML = 'Um temporizador com função de cronômetro e contador regressivo, ideal para atividades simples que precisa de uma exatidão de tempo'
-        linkProject.href = 'https://champs-8.github.io/Despertador/index.html';
+        linkProject.href = 'https://champs-8.github.io/Projetos/Despertador/index.html';
     }
     if(idActive == 2) {
         spanDesc.innerHTML = 'Um sorteador de times, independente do que for jogar ou se divertir, poderá utilizá-lo para poder separar times com confiança e agilidade'
-        linkProject.href = 'https://champs-8.github.io/SorteioFutebol/index.html';
+        linkProject.href = 'https://champs-8.github.io/Projetos/SorteioFutebol/index.html';
     }
 }
 
