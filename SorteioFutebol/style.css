@@ -238,6 +238,9 @@ footer a:visited {
         float: left;
         padding-left: .2em;
     }
+    .btnList {
+        margin-left: 1em;
+    }
     /* configurando a lista de aleatorios 
     a div geral dos sorteados*/
     .sorteados {
