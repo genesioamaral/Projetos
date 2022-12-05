@@ -20,6 +20,7 @@ const verifyDesc = () => {
     }
     if(idActive == 1) {
         spanDesc.innerHTML = 'Um temporizador com função de cronômetro e contador regressivo, ideal para atividades simples que precisa de uma exatidão de tempo'
+        linkProject.href = 'https://champs-8.github.io/Despertador/index.html';
     }
     if(idActive == 2) {
         spanDesc.innerHTML = 'Um sorteador de times, independente do que for jogar ou se divertir, poderá utilizá-lo para poder separar times com confiança e agilidade'
